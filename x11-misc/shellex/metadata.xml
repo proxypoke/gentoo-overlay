@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>mail+gentoo@slowpoke.io</email>
+		<name>slowpoke</name>
+	</maintainer>
+	<longdescription lang="en">
+	shellex is supposed to be a dmenu-style launcher with a lot more features and a
+	lot simpler design. It launches a shell (currently zsh) and shows it in a small
+	terminal, wrapping every command with a little bit of extra magic (redirecting
+	stdout, stderr, disowning and closing the shell) to get more typical
+	launcher-behaviour.
+
+	This gives you a simple launcher with tab-completion and other shell-features,
+	configurable in shell.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/Merovius/shellex/issues</bugs-to>
+		<changelog>https://github.com/Merovius/shellex/blob/master/CHANGELOG.md</changelog>
+	</upstream>
+</pkgmetadata>
