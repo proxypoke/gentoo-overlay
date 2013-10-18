@@ -22,12 +22,14 @@ RDEPEND="${DEPEND}
 	dev-perl/X11-Protocol"
 
 src_compile() {
-	# the / in front is necessary to prevent shellex from using "/usrlib" as the
+	# the leading / is necessary to prevent shellex from using "/usrlib" as the
 	# lib directory.
 	emake LIBDIR="/$(get_libdir)"
+	emake mans
 }
 
 src_install() {
 	emake DESTDIR="${D}" LIBDIR="/$(get_libdir)" install
 	dodoc README.md
+	doman doc/man/shellex.1
 }
